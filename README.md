@@ -40,6 +40,7 @@ The design will be simple and user-friendly, reflecting creativity and professio
 •	Typography: Clean, modern fonts.
 •	Layout: Clear navigation and visual focus on products and services.
 •	User Experience: Easy to navigate, responsive across devices, and aligned with brand identity.
+
 Technical requirements
 The Origin Music website will require both a domain name and a reliable hosting service. A suitable option identified is originmusic. store, available through Hostinger for $47.88 for the first year and many other advantages - web hosting included (Hostinger, 2025). This domain is simple, brand-relevant, and easy for customers to remember. Hostinger also provides affordable hosting plans with sufficient storage for a small business, making it a practical choice for Origin Music’s initial online presence.
 The website will be developed using HTML, CSS, and JavaScript, ensuring a strong foundation for structure, design, and interactivity.
@@ -59,6 +60,7 @@ Budget
 •	Maintenance: estimated at $50 per year for updates and support.
 Total first-year cost: ±$102.68= ±R1848.24
 Once this proposal is approved, the focus will move to finalizing the logo concept, tagline then building out the website structure. From there, Origin Music can begin supporting the growth of any musical talent, sharing products online and step by step attract more clients and grow its presence.
+
  
 References
 Hostinger. (2025). Domain search results for originmusic.store. Available at: Cart | Hostinger [Accessed 26 August 2025].
