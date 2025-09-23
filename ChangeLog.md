@@ -4,4 +4,7 @@ Adding an image (logo) on the homepage
 Deleting some pages and updating others
 Adding some comments and references
 
+Part2:
 
+Color fonts and style of the logo changed
+style file created and linked to other files
