@@ -5,6 +5,6 @@ Deleting some pages and updating others
 Adding some comments and references
 
 Part2:
-
-Color fonts and style of the logo changed
-style file created and linked to other files
+* Proposal updated: Content Research and Sourcing section added
+* Applying multiple and descriptve comments
+* Style folder and style.css file created and linked to other html files
