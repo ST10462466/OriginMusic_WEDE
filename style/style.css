@@ -1,0 +1,75 @@
+body {
+  background-color: goldenrod;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(13, 70, 89);
+  padding: 10px;
+  margin-bottom: 5px; 
+}
+
+.logo {
+  border-radius: 15px;
+  width: 70px;
+  height: 65px;  
+  margin-right: 15px;
+}
+
+/* Navbar */
+.navbar {
+  border-radius: 10px;
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+/* Nav links */
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: medium;
+  padding-left: 80px;
+  margin: 15px; 
+}
+
+a:hover {
+  color: goldenrod;
+}
+
+/* Main content */
+.main-content {
+  background-color:  black;
+  text-align: justify;
+  padding: 250px;   /* reduced padding */
+  margin-top: 5px;     /* reduce gap above */
+  color: rgb(237, 224, 224); /* so text is visible on dark bg */
+}
+ul {
+  list-style-type: none;  /* removes bullets */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* align neatly */
+}
+
+ul li {
+  margin: 8px 0;          /* space between items */
+  font-size: 16px;
+  color: rgb(237, 224, 224);
+}
+
+/* Footer */
+.footer {
+  background: rgb(13, 70, 89);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin-top: 25px;     /* reduce gap above footer */
+}
