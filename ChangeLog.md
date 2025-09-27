@@ -8,3 +8,7 @@ Part2:
 * Proposal updated: Content Research and Sourcing section added
 * Applying multiple and descriptve comments
 * Style folder and style.css file created and linked to other html files
+* Implementing styling for the main parts of the webste whch are:
+  -header: logo and navigation bar
+  -main:
+  -and footer
