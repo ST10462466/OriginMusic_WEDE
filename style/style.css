@@ -1,5 +1,6 @@
+/* body */
 body {
-background-color: goldenrod;
+background-color: goldenrod ;
 color: white;
 font-family: "Noto Music", sans-serif; 
 font-weight: 400;
@@ -9,7 +10,7 @@ text-align: center;
 }
 
 /* Header */
-.header {
+header {
 align-items: center;
 background: rgb(13, 70, 89);
 border-radius: 3px;
@@ -20,12 +21,27 @@ margin-bottom: 5px;
 padding: 10px; 
 }
 
+
+/* logo & pictures */
 .logo {
   display: inline-block;
   border-radius: 15px;
   height: 65px; 
   margin: 15px;
   width: 70px; 
+}
+.Owner_pic{
+  display:flex;
+  border-radius: 15px;
+  height: 180px; 
+  width: 150px;
+  margin: 15px;
+}
+.advice-pic{
+  border-radius: 15px;
+  height: 150px; 
+  width: 200px;
+  margin: 15px;
 }
 
 /* Navbar */
@@ -51,10 +67,18 @@ a:hover {
   border-radius: 7px;
   padding: 0;
 }
+.org-details{
+  color: goldenrod;
+  border-radius: 7px;
+  padding: 0;
+  text-decoration: underline;
+}
+
+
 
 /* Main content */
-.main-content {
-  background-color:  black;
+main {
+  background-color:  darkolivegreen;
   border-radius: 3px;
   border-color: darkslategray;
   color: rgb(237, 224, 224);    
@@ -63,12 +87,17 @@ a:hover {
   padding: 85px;  
   text-align: left;
 }
+
+/* headings & paragraphs */
 h1 {
 font-family: sans-serif;
 font-weight: 600;
 font-style: normal;
-margin: 0;
+margin: 15px;
 text-align: left;
+}
+h3{
+ margin: 15px;
 }
 
 p {
@@ -79,6 +108,8 @@ p {
   margin: 15px;
   text-align: left;
 }
+
+/* list */
 ul {
   list-style-type: none;  /* removes bullets */
   padding: 0;
@@ -87,13 +118,33 @@ ul {
 }
 
 li {
-  margin: 8px ;          /* space between items */
+  margin: 15px;         /* space between items */
   font-size: 16px;
   color: rgb(237, 224, 224);
 }
 
+/* Button */
+button{
+  background-color: rgb(13, 70, 89);
+  margin: 15px;
+  text-align: left;
+  color: rgb(237, 224, 224);
+  size: 3px;
+  box-shadow: none;
+}
+
+/* iframe */
+iframe{
+ display: inline-block;
+ border-radius: 20px;
+ height: 150px; 
+ width: 250px;
+ margin: 8px;
+ padding: 15px;
+}
+
 /* Footer */
-.footer {
+footer {
   background: rgb(13, 70, 89);
   border-radius: 3px;
   border-color: darkslategray;
