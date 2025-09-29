@@ -178,3 +178,224 @@ footer {
   margin-top: 40px;   
   margin-bottom: 0%; 
 }
+
+
+/* =========================
+   MEDIA QUERIES FOR RESPONSIVE DESIGN
+========================= */
+
+/* SMALL MOBILE: 320px */
+@media (max-width: 320px) {
+  body {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0.5em; /* reduces yellow space around */
+  }
+
+  header {
+    flex-direction: column;
+    padding: 0.5em;
+    margin-bottom: 0.5em; /* less space below header */
+  }
+
+  .logo {
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 0.3em 0;
+    font-size: 0.9em;
+    padding: 0.2em;
+  }
+
+  main {
+    padding: 1.5em; /* less internal padding */
+    margin: 0.5em 0; /* reduce yellow space around main */
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h3, p {
+    font-size: 0.9em;
+    margin: 0.5em 0;
+  }
+
+  .product-item, .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products, .owner-pic {
+    width: 8em;
+    height: auto;
+  }
+
+  iframe {
+    width: 90%;
+    height: 10em;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 0.5em;
+    margin-top: 0.5em; /* less yellow space above footer */
+  }
+}
+
+/* MOBILE: 375px */
+@media (max-width: 375px) {
+  body {
+    font-size: 0.85rem;
+    margin: 0.5em;
+  }
+
+  header {
+    padding: 0.7em;
+    margin-bottom: 0.7em;
+  }
+
+  main {
+    padding: 2em 1em;
+    margin: 0.7em 0;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h3, p {
+    font-size: 0.95em;
+  }
+
+  .products, .owner-pic {
+    width: 9em;
+  }
+
+  iframe {
+    width: 95%;
+  }
+}
+
+/* SMALL TABLET: 725px */
+@media (max-width: 725px) {
+  body {
+    font-size: 0.9rem;
+    margin: 1em;
+  }
+
+  header {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  main {
+    padding: 2.5em 2em;
+    margin: 1em 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h3, p {
+    font-size: 1em;
+  }
+
+  .product-item, .about-us {
+    flex-direction: column;
+  }
+
+  .products, .owner-pic {
+    width: 10em;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+/* TABLET: 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+    margin: 1em;
+  }
+
+  header {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  main {
+    padding: 3em 2em;
+    margin: 1em 0;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h3, p {
+    font-size: 1.05em;
+  }
+
+  .product-item, .about-us {
+    flex-direction: column;
+  }
+
+  .products, .owner-pic {
+    width: 11em;
+  }
+}
+
+/* SMALL DESKTOP: 1024px */
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.05rem;
+    margin: 1.5em;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  .navbar {
+    margin: 0.5em;
+  }
+
+  .navbar a {
+    font-size: 1.1em;
+    margin: 0 0.5em;
+  }
+
+  main {
+    padding: 4em 3em;
+    margin: 1.5em 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h3, p {
+    font-size: 1.1em;
+  }
+
+  .product-item, .about-us {
+    flex-direction: row;
+  }
+
+  .products, .owner-pic {
+    width: 12em;
+  }
+}
+/* OpenAI ChatGPT (2025), 29 September. Available at: https://chatgpt.com/c/68dacbd3-a1d4-832a-a766-169d01719227
+ [Accessed: 29 September 2025].  */
