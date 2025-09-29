@@ -9,7 +9,8 @@ margin: 0;
 text-align: center;
 }
 
-/* Header */
+
+/* Header, first part of the body on every page*/
 header {
 align-items: center;
 background: rgb(13, 70, 89);
@@ -20,9 +21,7 @@ justify-content: center;
 margin-bottom: 5px;
 padding: 10px; 
 }
-
-
-/* logo & pictures */
+/* logo */
 .logo {
   display: inline-block;
   border-radius: 15px;
@@ -30,99 +29,27 @@ padding: 10px;
   margin: 15px;
   width: 70px; 
 }
-.Owner_pic{
-  display:flex;
-  border-radius: 15px;
-  height: 180px; 
-  width: 150px;
-  margin: 15px;
-}
-.advice-pic{
-  border-radius: 15px;
-  height: 150px; 
-  width: 200px;
-  margin: 15px;
-}
-
-/* Navbar */
+/* navbar, helps navigate through pages */
 .navbar {
   border-radius: 5px;
   margin: 20px;
   padding: 10px;
 }
-
-/* Nav bar and links */
+/*  links and hover */
 a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: medium;
   margin: 50px;
-  padding: 2px;; 
+  padding: 2px;
 }
-
 a:hover {
   color: goldenrod;
   background-color: floralwhite;
   border-radius: 7px;
   padding: 0;
 }
-.org-details{
-  color: goldenrod;
-  border-radius: 7px;
-  padding: 0;
-  text-decoration: underline;
-}
-
-
-
-/* Main content */
-main {
-  background-color:  darkolivegreen;
-  border-radius: 3px;
-  border-color: darkslategray;
-  color: rgb(237, 224, 224);    
-  margin-top: 5px;  
-  margin-bottom: 20px;
-  padding: 85px;  
-  text-align: left;
-}
-
-/* headings & paragraphs */
-h1 {
-font-family: sans-serif;
-font-weight: 600;
-font-style: normal;
-margin: 15px;
-text-align: left;
-}
-h3{
- margin: 15px;
-}
-
-p {
-  display: block;
-  font-family: "Noto Music";
-  font-weight: 400;
-  font-style: normal;
-  margin: 15px;
-  text-align: left;
-}
-
-/* list */
-ul {
-  list-style-type: none;  /* removes bullets */
-  padding: 0;
-  margin: 0;
-  text-align: left; /* align neatly */
-}
-
-li {
-  margin: 15px;         /* space between items */
-  font-size: 16px;
-  color: rgb(237, 224, 224);
-}
-
 /* Button */
 button{
   background-color: rgb(13, 70, 89);
@@ -133,7 +60,76 @@ button{
   box-shadow: none;
 }
 
-/* iframe */
+
+/* Main content, second part of the body */
+main {
+  background-color:  darkolivegreen;
+  border-radius: 3px;
+  border-color: darkslategray;
+  color: rgb(237, 224, 224);    
+  margin: 5px;  
+  margin-bottom: 20px;
+  padding: 85px;  
+  text-align: left;
+}
+/* headings & paragraphs */
+h1 {
+font-size:xx-large;
+font-family: sans-serif;
+font-weight: 600;
+font-style: normal;
+margin: 15px;
+text-align: left;
+}
+h3{
+ margin: 15px;
+}
+p {
+  display: block;
+  font-family: "Noto Music";
+  font-weight: 400;
+  font-style: normal;
+  margin: 15px;
+  text-align: left;
+}
+
+/* Products page layout */
+.product-item {
+  display: flex;
+  align-items: flex-start; /* keeps text aligned to top of image */
+  gap: 20px; /* space between image and text */
+  margin: 20px 0;
+}
+.products{
+    height: 200px;
+    width: 150px;
+    margin: 15px;
+    border-radius: 7px;
+}
+.products-text {
+  flex: 1; /* allow text to take remaining space */
+}
+
+/* ContactUs page layout */
+/* unorderd list wth its etails */
+ul {
+  list-style-type: none;  /* removes bullets */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* align neatly */
+}
+li {
+  margin: 15px;         /* space between items */
+  font-size: 16px;
+  color: rgb(237, 224, 224);
+}
+.org-details{
+  color: goldenrod;
+  border-radius: 7px;
+  padding: 0;
+  text-decoration: underline;
+}
+/* iframe #map */
 iframe{
  display: inline-block;
  border-radius: 20px;
@@ -143,7 +139,35 @@ iframe{
  padding: 15px;
 }
 
-/* Footer */
+/* AboutUs page layout */
+.about-us {
+  display: flex;           /* side-by-side layout */
+  align-items: flex-start; /* top-align text with image */
+  gap: 20px;               /* space between image and text */
+  margin: 20px 0;
+}
+.owner-pic {
+  width: 170px;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 0;
+  margin: 15px;
+  margin-top: 25px;
+}
+.owner-caption {
+  font-size: 14px;
+  color: lightgray;
+  margin: 0;
+  font-style: italic;
+  margin-left: 15px;
+}
+.about-us-text {
+  flex: 1;                 /* text takes remaining space */
+  text-align: left;
+}
+
+
+/* Footer, third and last part of the body */
 footer {
   background: rgb(13, 70, 89);
   border-radius: 3px;
@@ -154,4 +178,3 @@ footer {
   margin-top: 40px;   
   margin-bottom: 0%; 
 }
-
