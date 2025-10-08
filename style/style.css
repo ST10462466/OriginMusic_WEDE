@@ -51,15 +51,22 @@ a:hover {
   padding: 0;
 }
 /* Button */
-button{
-  background-color: rgb(13, 70, 89);
-  margin: 15px;
-  text-align: left;
+.btn {
+  display: inline-block;
+  background-color: rgb(13, 70, 89); /* soft red color */
   color: rgb(237, 224, 224);
-  size: 3px;
-  box-shadow: none;
+  margin: 15px; /* space around buttons */
+  size: 5px;
+  text-decoration: none; /* remove underline for links */
+  border-radius: 5px; /* rounded corners */
+  font-size: small;
 }
 
+.btn:hover {
+  background-color: #0a66a0; 
+}
+/* OpenAI ChatGPT (2025). Available at: https://chatgpt.com/c/68e40b79-e1ec-832c-813b-4cda3cdf4e27
+ [Accessed: 8 October 2025].  */
 
 /* Main content, second part of the body */
 main {
@@ -109,6 +116,7 @@ p {
 .products-text {
   flex: 1; /* allow text to take remaining space */
 }
+
 
 /* ContactUs page layout */
 /* unorderd list wth its etails */
@@ -180,11 +188,9 @@ footer {
 }
 
 
-/* =========================
-   MEDIA QUERIES FOR RESPONSIVE DESIGN
-========================= */
+/* Media queries for responsive design */
 
-/* SMALL MOBILE: 320px */
+/* Small mobile: 320px */
 @media (max-width: 320px) {
   body {
     font-size: 0.8rem;
@@ -247,7 +253,7 @@ footer {
   }
 }
 
-/* MOBILE: 375px */
+/* Mobile: 375px */
 @media (max-width: 375px) {
   body {
     font-size: 0.85rem;
@@ -281,7 +287,7 @@ footer {
   }
 }
 
-/* SMALL TABLET: 725px */
+/* Small tablet: 725px */
 @media (max-width: 725px) {
   body {
     font-size: 0.9rem;
@@ -319,7 +325,7 @@ footer {
   }
 }
 
-/* TABLET: 768px */
+/* Tablet: 768px */
 @media (max-width: 768px) {
   body {
     font-size: 1rem;
@@ -353,7 +359,7 @@ footer {
   }
 }
 
-/* SMALL DESKTOP: 1024px */
+/* Small desktop: 1024px */
 @media (max-width: 1024px) {
   body {
     font-size: 1.05rem;
