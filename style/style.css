@@ -1,7 +1,7 @@
 /* body */
 body {
-background-color: goldenrod ;
-color: white;
+background-color: lightblue;
+color: whitesmoke;
 font-family: "Noto Music", sans-serif; 
 font-weight: 400;
 font-style: normal;
@@ -9,17 +9,16 @@ margin: 0;
 text-align: center;
 }
 
-
 /* Header, first part of the body on every page*/
 header {
 align-items: center;
-background: rgb(13, 70, 89);
+background: lightskyblue;
 border-radius: 3px;
-border-color: darkslategray;
+color: whitesmoke;
 display: flex;
 justify-content: center;
 margin-bottom: 5px;
-padding: 10px; 
+padding: 5px; 
 }
 /* logo */
 .logo {
@@ -37,7 +36,7 @@ padding: 10px;
 }
 /*  links and hover */
 a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: bold;
   font-size: medium;
@@ -45,44 +44,41 @@ a {
   padding: 2px;
 }
 a:hover {
-  color: goldenrod;
-  background-color: floralwhite;
-  border-radius: 7px;
-  padding: 0;
-}
-/* Button */
-.btn {
-  display: inline-block;
-  background-color: rgb(13, 70, 89); /* soft red color */
-  color: rgb(237, 224, 224);
-  margin: 15px; /* space around buttons */
-  size: 5px;
-  text-decoration: none; /* remove underline for links */
-  border-radius: 5px; /* rounded corners */
-  font-size: small;
+  color: gold;
+  background-color: transparent;
+  border-radius: 6px;
 }
 
+/* Buttons */
+.btn {
+  display:flexbox;
+  background-color:lightgreen;
+  color: whitesmoke;
+  margin: 18px; 
+  padding:5px;
+  text-size-adjust: 5px;
+  text-decoration: none; 
+  border-radius: 7px;
+  font-size: small;
+}
 .btn:hover {
   background-color: #0a66a0; 
 }
-/* OpenAI ChatGPT (2025). Available at: https://chatgpt.com/c/68e40b79-e1ec-832c-813b-4cda3cdf4e27
- [Accessed: 8 October 2025].  */
+/* OpenAI ChatGPT (2025). Available at: https://chatgpt.com/c/68e40b79-e1ec-832c-813b-4cda3cdf4e27 [Accessed: 8 October 2025].  */
 
 /* Main content, second part of the body */
 main {
-  background-color:  darkolivegreen;
-  border-radius: 3px;
-  border-color: darkslategray;
-  color: rgb(237, 224, 224);    
-  margin: 5px;  
-  margin-bottom: 20px;
-  padding: 85px;  
+  background: lightskyblue;
+  border-radius: 10px;
+  color: whitesmoke;    
+  margin-left: 15px;
+  padding: 70px;  
   text-align: left;
 }
 /* headings & paragraphs */
 h1 {
 font-size:xx-large;
-font-family: sans-serif;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-weight: 600;
 font-style: normal;
 margin: 15px;
@@ -108,10 +104,10 @@ p {
   margin: 20px 0;
 }
 .products{
-    height: 200px;
-    width: 150px;
-    margin: 15px;
-    border-radius: 7px;
+  height: 200px;
+  width: 150px;
+  margin: 15px;
+  border-radius: 7px;
 }
 .products-text {
   flex: 1; /* allow text to take remaining space */
@@ -155,7 +151,7 @@ iframe{
   margin: 20px 0;
 }
 .owner-pic {
-  width: 170px;
+  width: 150px;
   height: 200px;
   border-radius: 15px;
   margin-bottom: 0;
@@ -169,7 +165,7 @@ iframe{
   font-style: italic;
   margin-left: 15px;
 }
-.about-us-text {
+.history {
   flex: 1;                 /* text takes remaining space */
   text-align: left;
 }
@@ -177,7 +173,7 @@ iframe{
 
 /* Footer, third and last part of the body */
 footer {
-  background: rgb(13, 70, 89);
+  background: lightskyblue;
   border-radius: 3px;
   border-color: darkslategray;
   padding: 5px;
