@@ -1,5 +1,30 @@
-// ====== CONTACT FORM FUNCTIONALITY ======
+// ====== EQUIRY/SERVICE FORM FUNCTIONALITY ======
 document.addEventListener("DOMContentLoaded", () => {
+  const enquiryForm = document.getElementById("enquiryForm");
+  if (enquiryForm) {
+    enquiryForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
+      if (!name || !email || !service || !date) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+      let responseText = "";
+      switch (service) {
+        case "repair":
+          responseText = `Hi ${name}, our repair assistance is available on ${date}.`;
+          break;
+        case "rentals":
+          responseText = `Thank you ${name} for your interest in our rentals services! We will email you shortly to give you more info.`;
+          break;
+      }
+      document.getElementById("enquiryResponse").textContent = responseText;
+    });
+  }
+  // ====== CONTACT FORM FUNCTIONALITY ======
 const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
@@ -12,6 +37,8 @@ const contactForm = document.getElementById("contactForm");
         alert("Please complete all fields.");
         return;
       }
+      // Implementation of a reguar expression(regex) to give the pattern that 
+      // the user's email should follow to be valideted 
       const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
       if (!email.match(emailPattern)) {
         alert("Please enter a valid email address.");

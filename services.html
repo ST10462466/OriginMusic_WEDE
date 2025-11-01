@@ -33,28 +33,29 @@ Canva (2025) Logo design template [Origin Music logo customized]. Canva. Availab
 <main>
 <!-- Inserting paragraphs and headings -->
 <h1>Our Services</h1>
-<ul> 
-<li> 
-<h3> Instrument Repairs </h3>
-<p>We provide professional repair services for guitars, pianos, violins, and more.</p> 
-<p>Affordable daily, weekly, or monthly rentals for students and professionals.</p>
-</li>
+<form id="enquiryForm">
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required minlength="3">
 
-<li>
-<h3>Rentals</h3>
-<p>Need an instrument for a short time? We offer affordable rental options.</p>
-</li>
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
 
-<li>
-<h3> Advice & Support </h3>
-<p>Not sure what to buy? Our friendly staff can guide you to the right instrument.</p>
-</li>
-</ul>
+  <label for="service">I would like to enquire about:</label>
+  <select id="service" name="service" required>
+    <option value="">--Select an option--</option>
+    <option value="repair">Repair</option>
+    <option value="rentals">Rentals</option>
+  </select>
+
+  <label for="date">Preferred Date:</label>
+  <input type="date" id="date" name="date" required>
+
+  <button type="submit">Submit Enquiry</button>
+  <p id="enquiryResponse" class="response"></p>
+</form>
 </main>
-
 <footer><p>&copy; 2025 Origin Music|Learn - Grow - Stay inspired always!</p></footer>
-
-
+<script src="script.js"></script>
 </body>
 </html>
 <!-- Code/Reference: Available at: https://www.w3schools.com/html/default.asp [Accessed 29 August 2025] -->
