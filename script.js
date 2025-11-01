@@ -51,6 +51,49 @@ const contactForm = document.getElementById("contactForm");
     });
   }
 });
+// ====== DYNAMIC SEARCH BAR ======
+const searchInput = document.getElementById('searchInput');
+const sortSelect = document.getElementById('sortSelect');
+const productContainers = document.querySelectorAll('.products');
+
+// Function to filter and sort products
+function filterAndSortProducts() {
+  const query = searchInput.value.toLowerCase();
+  const sortValue = sortSelect.value;
+
+  productContainers.forEach(container => {
+    // Convert NodeList to array for sorting
+    const items = Array.from(container.querySelectorAll('.product-item'));
+
+    // Filter items based on search
+    const filtered = items.filter(item => {
+      const name = item.querySelector('.product-name').textContent.toLowerCase();
+      return name.includes(query);
+    });
+
+    // Sort items
+    filtered.sort((a, b) => {
+      const nameA = a.querySelector('.product-name').textContent.toLowerCase();
+      const nameB = b.querySelector('.product-name').textContent.toLowerCase();
+      const priceA = parseFloat(a.querySelector('.product-price').textContent.replace(/[R$,]/g, ''));
+      const priceB = parseFloat(b.querySelector('.product-price').textContent.replace(/[R$,]/g, ''));
+
+      if (sortValue === 'name-asc') return nameA.localeCompare(nameB);
+      if (sortValue === 'name-desc') return nameB.localeCompare(nameA);
+      if (sortValue === 'price-asc') return priceA - priceB;
+      if (sortValue === 'price-desc') return priceB - priceA;
+    });
+
+    // Clear current items and re-append filtered & sorted items
+    container.innerHTML = '';
+    filtered.forEach(item => container.appendChild(item));
+  });
+}
+
+// Event listeners
+searchInput.addEventListener('input', filterAndSortProducts);
+sortSelect.addEventListener('change', filterAndSortProducts);
+
 // ====== GALLERY LIGHTBOX FUNCTIONALITY ======
 const galleryImages = document.querySelectorAll(".products-img");
 const lightbox = document.getElementById("lightbox");

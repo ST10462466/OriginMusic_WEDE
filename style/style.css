@@ -31,6 +31,7 @@ header {
 }
 /*  links and hover */
 a {
+  transition: color 0.3s ease, background-color 0.3s ease;
   color: black;
   text-decoration: none;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -55,6 +56,7 @@ a:hover {
   text-decoration: none; 
   border-radius: 7px;
   font-size: small;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 /* OpenAI ChatGPT (2025). Available at: https://chatgpt.com/c/68e40b79-e1ec-832c-813b-4cda3cdf4e27 [Accessed: 8 October 2025].  */
 
@@ -89,11 +91,25 @@ p {
   margin: 15px;
   text-align: left;
 }
+/* search bar */
+.search-bar {
+  margin: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 
+#searchInput, #sortSelect {
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 /* gallery of products */
 .products {
   display: flex;
-  justify-content: left;   /* centers all images */
+  justify-content: left;   
   align-items: center;
   flex-wrap: nowrap;         /* keeps all 4 on one line */
   gap: 8px;                  /* reduces spacing between images */
@@ -102,7 +118,7 @@ p {
 /* images*/
 .products-img {
   margin-left: 15px;
-  width: 250px;               /* ensures 4 images fit in one row */
+  width: 180px;               
   height: 250px;
   border-radius: 10px;
   cursor: pointer;
@@ -111,6 +127,27 @@ p {
 .products-img:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* Product captions */
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin: 4px 0; 
+  line-height: 1.0; 
+}
+.product-name {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2C2C2C;
+}
+.product-price {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #16213e;
 }
 /* Lightboxes */
 .lightbox {
@@ -155,10 +192,10 @@ p {
   user-select: none;
 }
 .products-description {
-  flex: 1; /* allow text to take remaining space */
+  flex: 1; 
 }
 
-/* ContactUs page layout */
+/* ContactUs form */
 form {
   display: flex;
   flex-direction: column;
@@ -169,25 +206,23 @@ form {
 input, select, textarea, button {
   padding: 0.6rem;
   border: 1px solid ;
-  border-radius: 5px;
+  border: 1px solid #ccc
 
 }
 textarea{
   background-color: whitesmoke;
   color: black;
 }
-
 button {
   background-color:#16213e;
   color: whitesmoke;
   border: none;
   cursor: pointer;
 }
-
 button:hover {
   background-color: #005a8d;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
-
 .response {
   color: rgb(13, 124, 13);
   font-weight: bold;
@@ -207,7 +242,7 @@ iframe{
 /* AboutUs page layout */
 .about-us {
   display: flex;           /* side-by-side layout */
-  align-items: flex-start; /* top-align text with image */
+  align-items: flex-start; 
   gap: 20px;               /* space between image and text */
   margin: 20px 0;
 }
@@ -220,7 +255,7 @@ iframe{
   margin-top: 25px;
 }
 .history {
-  flex: 1;                 /* text takes remaining space */
+  flex: 1;                
   text-align: left;
 }
 
