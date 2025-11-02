@@ -67,7 +67,21 @@ main {
   margin:0;
   padding: 70px;  
   text-align: left;
+  animation: fadeIn 1s ease-in-out; /*Animation for the main content of the page*/
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation for the  main content (text, form, or gallery) to gently fade in and slide up instead of appearing abruptly.*/
+/* Reference: Available at: https://chatgpt.com/c/690797da-6244-8326-949c-d93eb4ad9b42 [Accessed 2nd November 2025]*/
+
 main p:last-of-type {
   margin-bottom: 40px;
 }
@@ -126,6 +140,7 @@ p {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .products-img:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
