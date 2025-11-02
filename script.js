@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("enquiryResponse").textContent = responseText;
     });
   }
+  // Reference:Bulbulia, Z. (2025) Community_Outreach_Website.zip. Varsity College, WEDE5020, [14 October 2025]
+
   // ====== CONTACT FORM FUNCTIONALITY ======
 const contactForm = document.getElementById("contactForm");
   if (contactForm) {
@@ -51,11 +53,12 @@ const contactForm = document.getElementById("contactForm");
     });
   }
 });
+// Reference:Bulbulia, Z. (2025) Community_Outreach_Website.zip. Varsity College, WEDE5020, [14 October 2025]
+
 // ====== DYNAMIC SEARCH BAR ======
 const searchInput = document.getElementById('searchInput');
 const sortSelect = document.getElementById('sortSelect');
 const productContainers = document.querySelectorAll('.products');
-
 // Function to filter and sort products
 function filterAndSortProducts() {
   const query = searchInput.value.toLowerCase();
@@ -64,13 +67,11 @@ function filterAndSortProducts() {
   productContainers.forEach(container => {
     // Convert NodeList to array for sorting
     const items = Array.from(container.querySelectorAll('.product-item'));
-
     // Filter items based on search
     const filtered = items.filter(item => {
       const name = item.querySelector('.product-name').textContent.toLowerCase();
       return name.includes(query);
     });
-
     // Sort items
     filtered.sort((a, b) => {
       const nameA = a.querySelector('.product-name').textContent.toLowerCase();
@@ -83,16 +84,16 @@ function filterAndSortProducts() {
       if (sortValue === 'price-asc') return priceA - priceB;
       if (sortValue === 'price-desc') return priceB - priceA;
     });
-
     // Clear current items and re-append filtered & sorted items
     container.innerHTML = '';
     filtered.forEach(item => container.appendChild(item));
   });
 }
-
 // Event listeners
 searchInput.addEventListener('input', filterAndSortProducts);
 sortSelect.addEventListener('change', filterAndSortProducts);
+// Reference:Bulbulia, Z. (2025) SamplePOE.zip. Varsity College, WEDE5020, [22 October 2025]
+// Reference: Available at: https://chatgpt.com/c/69065a74-99bc-8326-acd7-15b51451efbf [Accessed 1st November 2025]
 
 // ====== GALLERY LIGHTBOX FUNCTIONALITY ======
 const galleryImages = document.querySelectorAll(".products-img");
@@ -129,7 +130,8 @@ prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) lightbox.style.display = "none";
 }); 
-
+// Reference:Bulbulia, Z. (2025) Community_Outreach_Website_Gallery.zip. Varsity College, WEDE5020, [14 October 2025]
+// Reference: Available at: https://chatgpt.com/c/690105b6-dbb8-832a-9eed-1734547da14c[Accessed 1st November 2025]//
 
 
 

@@ -106,6 +106,8 @@ p {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+/* Reference: Available at: https://chatgpt.com/c/69065a74-99bc-8326-acd7-15b51451efbf [Accessed 1st November 2025]*/
+
 /* gallery of products */
 .products {
   display: flex;
@@ -149,6 +151,8 @@ p {
   font-weight: bold;
   color: #16213e;
 }
+/*  Reference: Available at: https://chatgpt.com/c/6904f462-559c-832a-b0fc-049ce72c281b [Accessed 1st November 2025]*/
+
 /* Lightboxes */
 .lightbox {
   display: none;
@@ -194,6 +198,7 @@ p {
 .products-description {
   flex: 1; 
 }
+/* Reference: Available at: https://chatgpt.com/c/690105b6-dbb8-832a-9eed-1734547da14c[Accessed 1st November 2025]*/
 
 /* ContactUs form */
 form {
