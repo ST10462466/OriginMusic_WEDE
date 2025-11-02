@@ -121,6 +121,14 @@ p {
   border: 1px solid #ccc;
 }
 /* Reference: Available at: https://chatgpt.com/c/69065a74-99bc-8326-acd7-15b51451efbf [Accessed 1st November 2025]*/
+.no-products {
+  font-size: 1rem;
+  color: #16213e;
+  margin: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+/* Reference: Available at: https://chatgpt.com/c/690797da-6244-8326-949c-d93eb4ad9b42 [Accessed 1st November 2025]*/
 
 /* gallery of products */
 .products {

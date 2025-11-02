@@ -72,6 +72,7 @@ function filterAndSortProducts() {
       const name = item.querySelector('.product-name').textContent.toLowerCase();
       return name.includes(query);
     });
+    
     // Sort items
     filtered.sort((a, b) => {
       const nameA = a.querySelector('.product-name').textContent.toLowerCase();
@@ -83,12 +84,25 @@ function filterAndSortProducts() {
       if (sortValue === 'name-desc') return nameB.localeCompare(nameA);
       if (sortValue === 'price-asc') return priceA - priceB;
       if (sortValue === 'price-desc') return priceB - priceA;
+      return 0;
     });
-    // Clear current items and re-append filtered & sorted items
+     // Clear container and append filtered items
     container.innerHTML = '';
-    filtered.forEach(item => container.appendChild(item));
+    if (filtered.length > 0) {
+      filtered.forEach(item => container.appendChild(item));
+      container.style.display = 'flex'; // restore display
+    } else {
+      // Show a "no products found" message
+      const msg = document.createElement('p');
+      msg.textContent = 'No matching products found.';
+      msg.className = 'no-products';
+      container.appendChild(msg);
+      container.style.display = 'block';
+    }
   });
 }
+/* Reference: Available at: https://chatgpt.com/c/690797da-6244-8326-949c-d93eb4ad9b42 [Accessed 1st November 2025]*/
+
 // Event listeners
 searchInput.addEventListener('input', filterAndSortProducts);
 sortSelect.addEventListener('change', filterAndSortProducts);
