@@ -19,3 +19,8 @@ There is no real negative feedback from part2 but few changes where made in term
 *Few meta tags where implemented in the head tag to enhance the website ranking to appear among the tops based on the keywords that the user enters.
 * Responsive and interactive gallery lightboxes are also implemented in this last part of the POE to enhance user experience.
 *  Contact form implemented on the contact.html page and styled as well in style.css
+*  Services form implemented as well on the services.html
+*  The dynamic search bar was implemented on the products.html
+*  Transitions was also added to buttons and buttons hover in style.css
+*  Fade in and slide up animations added to the main content in style.css file
+*  "no products found" message implemented on the products.html page when products typed in are not found
